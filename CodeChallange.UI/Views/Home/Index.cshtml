@@ -1,0 +1,19 @@
+﻿@section Title
+{
+    User List
+}
+
+<script src="~/Scripts/bootbag.js"></script>
+<script src="~/Scripts/UIScripts/main.js"></script>
+<script src="~/Scripts/UIScripts/Home/home.js"></script>
+
+<br />
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#createModal">Create</button>
+
+
+<div id="content">
+    @Html.Partial("_Details")
+</div>
+<div id="pagination"></div>
+<input value="@ViewBag.Count" id="count" type="hidden" />
+@Html.Partial("_popup")
